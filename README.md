@@ -73,19 +73,30 @@ Query Types:
 
 The following is the structure of the repo:
 
-├── data
-│   └── causalquest_labels.jsonl  # JSON Lines file containing labels for CausalQuest
-├── figs
-│   └── causality_types.png       # PNG image illustrating types of causality
-├── src
-│   ├── dataset_generation        # Scripts and modules for generating the dataset
-│   ├── fine_tuning               # Scripts and configurations for fine-tuning models
-│   ├── labeling_scripts          # Scripts used for labeling data
-│   └── linguistic_baseline       # Baseline linguistic models and scripts
-├── .gitignore                    # Specifies files and directories to be ignored by git
-├── LICENSE                       # License information for the repository
-├── README.md                     # This file, providing an overview and documentation
-└── requirements.txt              # List of dependencies and libraries required for the project
+- **data**
+  - causalquest_labels.jsonl: JSON Lines file containing labels for CausalQuest
+
+- **src**
+  - **dataset_generation**
+    - build_causalquest.py: Script to generate the full dataset
+    - dataloaders.py: Scripts to load all sources
+    - utils.py: Utility functions
+
+  - **fine_tuning**
+    - train_flan_lora.py: Script to fine-tune FLAN model with LoRA
+    - train_phi_lora.py: Script to fine-tune PHI model with LoRA
+
+  - **labeling_scripts**
+    - compute_annotator_agreement.py: Script to compute annotator agreement
+    - dataset_generation.py: Script used to generate the dataset
+    - graph_generation.py: Script to generate the graphs of the paper
+    -nq_sampling.py: Script to sample from Natural Questions
+    - run_batchAPI.py: Script to run the OpenAI batch API
+    - run_classification.py: Script to run the normal OpenAI API
+    - utils.py: Utility functions
+
+  - **linguistic_baseline**
+    - linguistic_baseline.py: Baseline linguistic models and scripts
 
 ## Code Setup
 
