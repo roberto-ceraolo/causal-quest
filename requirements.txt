@@ -1,0 +1,5 @@
+pandas==2.2.1
+datasets==2.18.0
+huggingface_hub==0.22.2
+pycld2==0.41
+tqdm==4.66.2
