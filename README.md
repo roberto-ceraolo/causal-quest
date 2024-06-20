@@ -5,6 +5,8 @@
 <p align="center"> Fig 1: Examples of three main types of causal questions in CausalQuest: (a) querying the effect given a cause, (b) querying the cause given the effect, and (c) querying the causal relation of the given variables.
 </p>
 
+**Paper: ** <https://arxiv.org/abs/2405.20318>
+
 This repository accompanies our research paper titled "**CausalQuest: Collecting Natural Causal Questions for AI Agents**" by *Roberto Ceraolo\*, Dmitrii Kharlapenko\*, Amélie Reymond, Rada Mihalcea, Mrinmaya Sachan, Bernhard Schölkopf, Zhijing Jin*.
 The repo contains the code that we used to generate the dataset, the results and the plots that we used in the paper. It also contains the labels for the CausalQuest dataset used in the paper and the code to reproduce the full dataset, which is not directly shared here because one of the sources has an unknown license.
 
